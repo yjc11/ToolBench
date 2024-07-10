@@ -1,18 +1,15 @@
 #!/usr/bin/env python
 # coding=utf-8
 import time
+from typing import List, Optional
+
+import torch
 from termcolor import colored
-from typing import Optional, List
-import torch
-from typing import Optional
-import torch
-from transformers import (
-    AutoTokenizer,
-    AutoModelForCausalLM,
-)
-from toolbench.utils import process_system_message
-from toolbench.model.model_adapter import get_conversation_template
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
 from toolbench.inference.utils import SimpleChatIO, generate_stream, react_parser
+from toolbench.model.model_adapter import get_conversation_template
+from toolbench.utils import process_system_message
 
 
 class ToolLLaMA:

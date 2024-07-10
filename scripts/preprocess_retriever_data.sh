@@ -2,7 +2,7 @@
 
 export PYTHONPATH=./
 export QUERY_FILE="data/instruction/G1_query.json"
-export INDEX_FILE="data/test_query_ids/G1_instruction_test_query_ids.json"
+export INDEX_FILE="data/test_query_ids/G1_instruction.json"
 export DATASET_NAME="G1"
 export OUTPUT_DIR="data/retrieval/G1"
 
